@@ -3,155 +3,161 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Collaboradge - Early Access</title>
+  <title>Collabify - Early Access</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-[#0f172a] text-white font-sans">
+<body class="bg-gray-900 text-gray-100 font-sans">
 
-  <!-- Navbar -->
-  <nav class="flex items-center justify-between px-6 py-4 bg-[#0f172a] border-b border-gray-700">
-    <!-- Logo -->
-    <div class="flex items-center space-x-2">
-      <img src="linkup-icon.png" alt="Collaboradge" class="h-8" />
-      <span class="text-xl font-bold">Collaboradge</span>
+  <!-- Header -->
+  <header class="py-6 border-b border-gray-700">
+    <div class="max-w-6xl mx-auto px-6 flex justify-between items-center">
+      <!-- Logo + Brand -->
+      <div class="flex items-center space-x-3">
+        <img src="linkup-icon.png" alt="Collabify Logo" class="w-10 h-10 rounded-full">
+        <h1 class="text-2xl font-bold text-white">Collabify</h1>
+      </div>
+      <nav>
+        <a href="#features" class="ml-6 text-gray-300 hover:text-white">Features</a>
+        <a href="#signup" class="ml-6 text-gray-300 hover:text-white">Early Access</a>
+      </nav>
     </div>
-
-    <!-- Desktop Links -->
-    <div class="hidden md:flex space-x-8">
-      <a href="#features" class="hover:text-indigo-400">Features</a>
-      <a href="#early-access" class="hover:text-indigo-400">Early Access</a>
-    </div>
-
-    <!-- Mobile Menu Button -->
-    <div class="md:hidden">
-      <button id="menu-btn" class="text-white text-2xl focus:outline-none">☰</button>
-    </div>
-  </nav>
-
-  <!-- Mobile Dropdown Menu -->
-  <div id="mobile-menu" class="hidden flex-col bg-[#1e293b] px-6 py-4 space-y-4 md:hidden">
-    <a href="#features" class="block hover:text-indigo-400">Features</a>
-    <a href="#early-access" class="block hover:text-indigo-400">Early Access</a>
-  </div>
+  </header>
 
   <!-- Hero Section -->
-  <section class="text-center py-16 px-6">
-    <h1 class="text-3xl md:text-5xl font-bold mb-4">Seamless Connections, Instant Collaborations.</h1>
-    <p class="text-gray-300 max-w-2xl mx-auto mb-8">
-      Collaboradge empowers brands and creators to unite, create standout campaigns, and foster
-      rewarding, authentic partnerships. Experience effortless collaboration with tools designed for real results.
+  <section class="text-center py-20 px-6">
+    <h2 class="text-4xl font-bold mb-4">Seamless Connections, Instant Collaborations.</h2>
+    <p class="text-lg text-gray-300 max-w-2xl mx-auto">
+      Collabify empowers brands and creators to unite, create standout campaigns, 
+      and foster rewarding, authentic partnerships. Experience effortless 
+      collaboration with tools designed for real results.
     </p>
-    <a href="#early-access" class="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold px-6 py-3 rounded-lg shadow">
+    <a href="#signup" class="mt-8 inline-block bg-indigo-600 hover:bg-indigo-500 text-white font-semibold px-6 py-3 rounded-lg shadow-lg">
       Request Early Access
     </a>
   </section>
 
   <!-- Features Section -->
-  <section id="features" class="py-16 px-6 max-w-5xl mx-auto">
-    <h2 class="text-2xl font-bold text-center mb-10">Platform Features</h2>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-      <div class="bg-[#1e293b] p-6 rounded-xl shadow">
-        <h3 class="font-semibold text-lg mb-2">Effortless Campaign Creation</h3>
-        <p class="text-gray-300">Intuitive forms and tools help brands launch campaigns in minutes.</p>
-      </div>
-      <div class="bg-[#1e293b] p-6 rounded-xl shadow">
-        <h3 class="font-semibold text-lg mb-2">Creator Discovery & Matchmaking</h3>
-        <p class="text-gray-300">Browse, search, and connect with creative talent tailored to any brand need.</p>
-      </div>
-      <div class="bg-[#1e293b] p-6 rounded-xl shadow">
-        <h3 class="font-semibold text-lg mb-2">Easy Application Process</h3>
-        <p class="text-gray-300">Creators can apply to campaigns directly and track their status.</p>
-      </div>
-      <div class="bg-[#1e293b] p-6 rounded-xl shadow">
-        <h3 class="font-semibold text-lg mb-2">Built-In Messaging</h3>
-        <p class="text-gray-300">Chat and negotiate securely, all within the platform.</p>
-      </div>
-      <div class="bg-[#1e293b] p-6 rounded-xl shadow">
-        <h3 class="font-semibold text-lg mb-2">Profile & Portfolio Management</h3>
-        <p class="text-gray-300">Showcase skills, track collaborations, and build a professional reputation.</p>
-      </div>
-      <div class="bg-[#1e293b] p-6 rounded-xl shadow">
-        <h3 class="font-semibold text-lg mb-2">Secure File & Image Sharing</h3>
-        <p class="text-gray-300">Brands and creators easily upload and share creative assets.</p>
-      </div>
-      <div class="bg-[#1e293b] p-6 rounded-xl shadow">
-        <h3 class="font-semibold text-lg mb-2">Role-Based Dashboards</h3>
-        <p class="text-gray-300">Personalized portals for creators, brands, and admins.</p>
-      </div>
-      <div class="bg-[#1e293b] p-6 rounded-xl shadow">
-        <h3 class="font-semibold text-lg mb-2">Notifications & Updates</h3>
-        <p class="text-gray-300">Stay informed about new campaigns, messages, and applications.</p>
+  <section id="features" class="py-16 bg-gray-900 text-gray-100">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-12">Platform Features</h2>
+      <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+        
+        <div class="p-6 rounded-2xl bg-gray-800 shadow-lg hover:bg-gray-700 transition">
+          <h3 class="text-lg font-semibold mb-3">Effortless Campaign Creation</h3>
+          <p class="text-gray-300">Intuitive forms and tools help brands launch campaigns in minutes.</p>
+        </div>
+        
+        <div class="p-6 rounded-2xl bg-gray-800 shadow-lg hover:bg-gray-700 transition">
+          <h3 class="text-lg font-semibold mb-3">Creator Discovery & Matchmaking</h3>
+          <p class="text-gray-300">Browse, search, and connect with creative talent tailored to any brand need.</p>
+        </div>
+        
+        <div class="p-6 rounded-2xl bg-gray-800 shadow-lg hover:bg-gray-700 transition">
+          <h3 class="text-lg font-semibold mb-3">Easy Application Process</h3>
+          <p class="text-gray-300">Creators can apply to campaigns directly and track their application status.</p>
+        </div>
+        
+        <div class="p-6 rounded-2xl bg-gray-800 shadow-lg hover:bg-gray-700 transition">
+          <h3 class="text-lg font-semibold mb-3">Built-In Messaging</h3>
+          <p class="text-gray-300">Chat and negotiate securely, all within the platform.</p>
+        </div>
+        
+        <div class="p-6 rounded-2xl bg-gray-800 shadow-lg hover:bg-gray-700 transition">
+          <h3 class="text-lg font-semibold mb-3">Profile & Portfolio Management</h3>
+          <p class="text-gray-300">Showcase skills, track collaborations, and build a professional reputation.</p>
+        </div>
+        
+        <div class="p-6 rounded-2xl bg-gray-800 shadow-lg hover:bg-gray-700 transition">
+          <h3 class="text-lg font-semibold mb-3">Secure File & Image Sharing</h3>
+          <p class="text-gray-300">Brands and creators easily upload and share creative assets.</p>
+        </div>
+        
+        <div class="p-6 rounded-2xl bg-gray-800 shadow-lg hover:bg-gray-700 transition">
+          <h3 class="text-lg font-semibold mb-3">Role-Based Dashboards</h3>
+          <p class="text-gray-300">Personalized portals tailored for creators, brands, and admins.</p>
+        </div>
+        
+        <div class="p-6 rounded-2xl bg-gray-800 shadow-lg hover:bg-gray-700 transition">
+          <h3 class="text-lg font-semibold mb-3">Notifications & Updates</h3>
+          <p class="text-gray-300">Stay informed about new campaigns, messages, and application progress.</p>
+        </div>
+
       </div>
     </div>
   </section>
 
-  <!-- Early Access Section -->
-  <section id="early-access" class="py-16 px-6 bg-[#1e293b] text-center">
-    <h2 class="text-2xl font-bold mb-6">Get Early Access</h2>
-    <form id="access-form" class="flex flex-col md:flex-row items-center justify-center gap-4 max-w-xl mx-auto">
-      <input 
-        type="email" 
-        id="email" 
-        placeholder="Enter your email" 
-        required 
-        class="flex-1 px-4 py-3 rounded-lg text-black focus:outline-none"
-      />
-      <button 
-        type="submit" 
-        class="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold px-6 py-3 rounded-lg shadow"
-      >
-        Notify Me
-      </button>
-    </form>
-    <p id="response" class="mt-4 text-sm text-gray-300"></p>
+  <!-- Signup Section -->
+  <section id="signup" class="py-20 bg-gray-800">
+    <div class="max-w-lg mx-auto text-center px-6">
+      <h2 class="text-3xl font-bold mb-4">Get Early Access</h2>
+      <p class="text-gray-300 mb-6">Sign up now to be the first to know when we launch.</p>
+      
+      <form id="emailForm" class="flex flex-col sm:flex-row gap-4 justify-center">
+        <input 
+          type="email" 
+          id="email" 
+          placeholder="Enter your email" 
+          class="flex-1 px-4 py-3 rounded-lg text-gray-900 focus:outline-none"
+          required 
+        />
+        <button 
+          type="submit" 
+          class="bg-indigo-600 hover:bg-indigo-500 px-6 py-3 rounded-lg font-semibold shadow-lg"
+        >
+          Notify Me
+        </button>
+      </form>
+      
+      <p id="message" class="mt-4 text-sm"></p>
+    </div>
   </section>
 
   <!-- Footer -->
-  <footer class="py-6 text-center text-gray-400 text-sm border-t border-gray-700">
-    © 2025 Collaboradge. All rights reserved.
+  <footer class="py-6 text-center text-gray-400 bg-gray-900">
+    <p>© 2025 Collabify. All rights reserved.</p>
   </footer>
 
-  <!-- JS -->
+  <!-- Signup Script -->
   <script>
-    // Mobile menu toggle
-    const menuBtn = document.getElementById("menu-btn");
-    const mobileMenu = document.getElementById("mobile-menu");
-    menuBtn.addEventListener("click", () => {
-      mobileMenu.classList.toggle("hidden");
-    });
-
-    // Handle email submission
-    const form = document.getElementById("access-form");
-    const responseEl = document.getElementById("response");
-
-    form.addEventListener("submit", async (e) => {
+    document.getElementById("emailForm").addEventListener("submit", async function (e) {
       e.preventDefault();
-      const email = document.getElementById("email").value;
+
+      const emailInput = document.getElementById("email");
+      const message = document.getElementById("message");
+      const email = emailInput.value.trim();
+
+      if (!email) {
+        message.textContent = "⚠️ Please enter a valid email.";
+        message.style.color = "orange";
+        return;
+      }
 
       try {
-        const res = await fetch("YOUR_GOOGLE_SCRIPT_URL", {
+        const response = await fetch("https://script.google.com/macros/s/AKfycbzovKb5x59Xmt1ZttV0OMmlE6BOve_fVUkNRaNQUxJtKyqHpj_HU9w4xiwtKbRUNWw4/exec", {
           method: "POST",
-          body: JSON.stringify({ email }),
-          headers: { "Content-Type": "application/json" },
+          headers: { "Content-Type": "application/x-www-form-urlencoded" },
+          body: "email=" + encodeURIComponent(email),
         });
 
-        if (res.ok) {
-          responseEl.textContent = "✅ Thanks! You’ll be notified.";
-          responseEl.classList.remove("text-red-400");
-          responseEl.classList.add("text-green-400");
-          form.reset();
+        const result = await response.text();
+
+        if (result.includes("Success")) {
+          message.textContent = "✅ Thanks! You’ll be notified.";
+          message.style.color = "lightgreen";
+          emailInput.value = "";
+        } else if (result.includes("Exists")) {
+          message.textContent = "⚠️ You’ve already signed up.";
+          message.style.color = "orange";
         } else {
-          responseEl.textContent = "⚠️ Something went wrong. Try again.";
-          responseEl.classList.remove("text-green-400");
-          responseEl.classList.add("text-red-400");
+          message.textContent = "❌ Something went wrong. Try again.";
+          message.style.color = "red";
         }
       } catch (err) {
-        responseEl.textContent = "⚠️ Network error.";
-        responseEl.classList.remove("text-green-400");
-        responseEl.classList.add("text-red-400");
+        message.textContent = "❌ Network error. Please try later.";
+        message.style.color = "red";
       }
     });
   </script>
+
 </body>
 </html>
-
